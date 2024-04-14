@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="shortcut icon" href="https://y.cenguigui.cn/lihua/image/logo.jpg" type="image/x-icon">
+  <style>
+    /* 父容器样式 */
+    .parent-container {
+      display: flex; /* 启用Flexbox布局 */
+      justify-content: space-between; /* 子元素之间的间隔均匀分布 */
+    }
+
+    /* 第一个模块样式 */
+    .module-one {
+      flex: 3; /* 占据一半的空间 */
+      padding: 20px;
+      background-color: #f2f2f2; /* 背景颜色 */
+      /* 设置固定高度 */
+      height: 1000px; /* 固定高度为300px */
+      /* overflow: auto; 如果内容超出高度，显示滚动条 */
+    }
+
+    /* 第二个模块样式 */
+    .module-two {
+      flex: 1; /* 占据一半的空间 */
+      padding: 20px;
+      background-color: #e6e6e6; /* 背景颜色 */
+      height: 1000px; /* 固定高度为1000px */
+      /* overflow: auto; 如果内容超出高度，显示滚动条 */
+    }
+    
+    .parent-container h2 {
+      font-size: calc(3rem + 1px); 
+      font-weight: bold; /* 加粗字体 */
+      font-family: 'Times New Roman', serif; /* 设置字体为'Times New Roman' */
+      margin-top: 2rem; /* 上边距为1.5rem */
+      margin-bottom: 1.5rem; /* 下边距为1.5rem */
+    }
+
+    .parent-container h2 span {
+      /* color: crimson; */
+      color: hsl(180, 100%, 50%);
+    }
+  </style>
+  <title>My Website</title>
+</head>
+
+<body>
+  <!--注释，加载黑胶vip热歌榜，设置cdn引入的路径，选择播放器颜色，随机播放器歌曲，让播放器淡出-->
+  <div id="gui-MusicPlayer" data-songChart="黑胶vip热歌榜" data-cdnName="https://y.cenguigui.cn/js" data-themeColor="gui-sky" data-random="true" data-fadeOutAutoplay></div>
+  <script src="https://y.cenguigui.cn/js/gui-MusicPlayer/js/gui-MusicPlayer.js"></script>
+
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>L</span>i <span>C</span>h</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="../../index.html#hero" data-after="Home">Home</a></li>
+            <li><a href="../../index.html#services" data-after="Service">Services</a></li>
+            <li><a href="../../index.html#projects" data-after="Projects">Projects</a></li>
+            <li><a href="../../index.html#about" data-after="About">About</a></li>
+            <li><a href="../../index.html#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>POT <span></span></h1>
+        <h1>beats the <span></span></h1>
+        <h1>Gray Wolf <span></span></h1>
+        <!-- <a href="#projects" type="button" class="cta">Portfolio</a> -->
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Artical Section -->
+  <div class="parent-container">
+    <!-- 第一个模块 -->
+    <div class="module-one">
+      <section id="article">
+        <div class="container">
+          <div>
+            <h1>The POT beats the Gray Wolf</h1>
+            <iframe class="Beat-Wolf" src="./beat wolf/index.html" height="550px" width="100%" frameborder="0" scrolling="no"></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="Time">
+        <iframe class="current-time" src="../../posts/index2.html" height="280px" width="100%" frameborder="0" scrolling="no"></iframe>
+      </section>
+    </div>
+
+    <!-- 第二个模块 -->
+    <div class="module-two">
+      <h2><span>R</span>e<span>c</span>ommended</h2>
+      <!-- <p>这是第二个模块的内容...</p> -->
+      <div class="carousel">
+        <a href="../../posts/post1/index.html" class="project-item">
+          <img src="../../img/project.jpg" class="active" alt="">
+        </a>
+        <a href="../../posts/post2/index.html" class="project-item">
+          <img src="../../img/img-1.png" alt="">
+        </a>
+        </a>
+				<a href="../../posts/post3/index.html" class="project-item">
+          <img src="../../img/RL.jpeg" alt="">
+        </a>
+        <a href="../../posts/post4/index.html" class="project-item">
+          <img src="../../img/Software engineerin.jpg" alt="">
+        </a>
+			</div>
+      <h2><span>N</span>ext <span>P</span>roject</h2>
+      <div class="nextpost">
+        <a href="../../posts/post1/index.html" class="project-item">
+          <img src="../../img/project.jpg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End Artical Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="../../img/头像.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Luck Comes and Goes</h2>
+        <p>Ying Zhongge, male, from Yongcheng, Henan Province, is currently studying in the 2021 class 1 of intelligent 
+          science and technology in the School of Intelligent Engineering, Sun Yat-sen University. Probationary member of 
+          the Communist Party of China.</p>
+        <p>I have participated in mathematical modeling competitions, programming competitions, and smart car competitions, 
+          welcome to contact me to communicate and learn from me!</p>
+        <a href="#" class="cta">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+86 10086</h2>
+            <h2>+86 158 3689 8265</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>lich021013@gmail.com</h2>
+            <h2>lich353@mail2.sysu.edu.cn</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Shenzhen, Guangdong, China</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>L</span>i <span>C</span>h</h1>
+      </div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2020 Arfan. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="../../app.js"></script>
+
+</body>
+
+</html>
